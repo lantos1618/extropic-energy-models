@@ -109,13 +109,19 @@ energy_based_systems/          # Main implementations using THRML
 ├── xy_spin_field_enhanced.py    # XY with arrow overlays
 ├── ising_phase_transition.py    # Ising model
 ├── potts_model_thrml.py         # Potts model
-├── create_evolution_videos.py   # Short evolution demos
-└── *.png                        # Phase diagrams
+└── create_evolution_videos.py   # Short evolution demos
 
 visualization_only/            # NumPy visualizations (not THRML)
 ├── mandelbrot_potential_theory.py
-├── mandelbrot_iteration_evolution.py
-└── *.png
+└── mandelbrot_iteration_evolution.py
+
+outputs/                      # Generated files (not in git)
+├── energy_based/               # THRML model outputs
+│   ├── *.png                   # Phase diagrams
+│   └── *.mp4                   # Videos
+└── visualization/              # Visualization outputs
+    ├── *.png
+    └── *.mp4
 
 documentation/                 # Analysis and explanations
 ├── WHY_IT_CANT_WORK.md
@@ -123,7 +129,7 @@ documentation/                 # Analysis and explanations
 ├── CRITICAL_REVIEW.md
 └── [other docs]
 
-assets/                       # Showcase images
+assets/                       # Curated showcase images (in git)
 ├── MASTER_SHOWCASE.png
 ├── PHASE_DIAGRAMS_COMPARISON.png
 └── SUMMARY_STATS.png
@@ -134,16 +140,18 @@ examples/                     # Utility scripts
 
 ## Results
 
+All generated files are in the `outputs/` directory (not tracked in git - run scripts to generate).
+
 ### Static Visualizations
-All PNG files are included in the repo for documentation:
+Sample outputs are included in `outputs/energy_based/` and `outputs/visualization/`:
 - Phase diagrams showing temperature sweeps
 - Vortex detection examples
 - Domain formation snapshots
 
 ### Video Files
-Videos are excluded from git (too large). Generate them locally or see examples on Twitter/releases.
+Videos are generated to `outputs/` (excluded from git). Generate them locally or see examples on Twitter.
 
-**Recommended:** `xy_massive_256x256_60fps_20s.mp4` (252MB)
+**Recommended:** `outputs/energy_based/xy_massive_256x256_60fps_20s.mp4` (252MB)
 - Highest quality, full resolution
 - Shows complete vortex dynamics
 - H.265 encoded, 60fps

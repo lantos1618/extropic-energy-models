@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib.colors import hsv_to_rgb
 import networkx as nx
+import os
+from pathlib import Path
 
 from thrml.block_management import Block
 from thrml.block_sampling import BlockGibbsSpec, sample_states, SamplingSchedule
@@ -129,7 +131,11 @@ def create_xy_massive_video(size=256, n_angles=16, beta=1.2, fps=60, duration=20
     anim = animation.FuncAnimation(fig, update, frames=n_frames,
                                   interval=1000/fps, blit=True)
 
-    output_file = f'xy_massive_256x256_60fps_{duration}s.mp4'
+    # Ensure output directory exists
+    output_dir = Path(__file__).parent.parent / 'outputs' / 'energy_based'
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    output_file = output_dir / f'xy_massive_256x256_60fps_{duration}s.mp4'
     print(f"  Encoding to {output_file}...")
     print(f"  (Encoding {n_frames} frames at 60fps with HIGH quality...)")
     # Use H.265 with very high quality settings

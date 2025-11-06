@@ -4,6 +4,9 @@
 # Large video files (use Git LFS or host elsewhere)
 *.mp4
 
+# Generated outputs (run scripts to regenerate)
+outputs/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -44,6 +47,3 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
-
-# Keep small PNGs for documentation
-!*.png
