@@ -36,6 +36,9 @@ Educational visualizations of energy-based models running on GPU using THRML—t
 - Frames: 1,200 @ 60fps (20 seconds)
 - Encoding: H.265 CRF 15 (high quality)
 
+![XY Model at Beta 1.2](assets/xy_model_beta_1.2.png)
+*XY model spin field showing vortex dynamics at β=1.2. Colors represent spin angles from 0 (red) to 2π (red again).*
+
 ### Ising Model
 **64×64 binary spins**
 
@@ -60,6 +63,14 @@ Located in `visualization_only/`, these are standard iterative calculations visu
 - **Iteration Evolution** - Shows how the fractal boundary emerges over iterations
 
 These are included for visual interest but are fundamentally different from the energy-based models above. The Mandelbrot set cannot be computed using THRML's thermodynamic sampling - it requires deterministic iteration, not probabilistic inference.
+
+### Mandelbrot Visualizations
+
+![Mandelbrot 3D Potential Theory](assets/mandelbrot_potential_theory_3d.png)
+*3D visualization of the Mandelbrot set potential field. Height and color represent escape time.*
+
+![Mandelbrot Iteration Evolution](assets/mandelbrot_iteration_comparison.png)
+*Evolution of the Mandelbrot set boundary across iterations, showing how the fractal structure emerges.*
 
 ## Technical Details
 
