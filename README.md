@@ -6,8 +6,21 @@ Visualizations of energy-based models using [Extropic's THRML library](https://g
 
 Educational visualizations of energy-based models running on GPU using THRML—the same algorithms designed for Extropic's thermodynamic hardware, just simulated digitally.
 
-**Not claiming:** Hardware breakthroughs or novel research  
+**Not claiming:** Hardware breakthroughs or novel research
 **Just showing:** What energy-based inference looks like when systems find equilibrium
+
+## Visual Showcase
+
+### Master Showcase: All Models
+![Master Showcase](assets/MASTER_SHOWCASE.png)
+
+### Phase Diagrams Comparison
+![Phase Diagrams](assets/PHASE_DIAGRAMS_COMPARISON.png)
+
+### System Statistics
+![Summary Stats](assets/SUMMARY_STATS.png)
+
+**Videos:** All generated videos are in the `outputs/` directory (run scripts to generate locally). The main XY model video (`outputs/energy_based/xy_massive_256x256_60fps_20s.mp4`) is 252MB of 60fps high-quality visualization showing vortex dynamics in real-time.
 
 ## Models Implemented
 
