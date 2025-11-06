@@ -103,22 +103,33 @@ python xy_model_vortices.py
 ## Repository Structure
 
 ```
-energy_based_systems/
+energy_based_systems/          # Main implementations using THRML
 ├── xy_massive_256_60fps.py      # Main XY model (256x256 @ 60fps)
 ├── xy_model_vortices.py         # XY with vortex detection
-├── xy_spin_field_enhanced.py   # XY with arrow overlays
-├── ising_phase_transition.py   # Ising model
+├── xy_spin_field_enhanced.py    # XY with arrow overlays
+├── ising_phase_transition.py    # Ising model
 ├── potts_model_thrml.py         # Potts model
-└── create_evolution_videos.py  # Short evolution demos
+├── create_evolution_videos.py   # Short evolution demos
+└── *.png                        # Phase diagrams
 
-visualization_only/
-├── mandelbrot_potential_theory.py         # NumPy-based (not THRML)
-└── mandelbrot_iteration_evolution.py      # NumPy-based (not THRML)
+visualization_only/            # NumPy visualizations (not THRML)
+├── mandelbrot_potential_theory.py
+├── mandelbrot_iteration_evolution.py
+└── *.png
 
-documentation/
-├── WHY_IT_CANT_WORK.md          # Why Mandelbrot ≠ Energy-based
-├── VISUAL_EBM_IDEAS.md          # Other model suggestions
-└── *.png                        # Phase diagrams and visualizations
+documentation/                 # Analysis and explanations
+├── WHY_IT_CANT_WORK.md
+├── VISUAL_EBM_IDEAS.md
+├── CRITICAL_REVIEW.md
+└── [other docs]
+
+assets/                       # Showcase images
+├── MASTER_SHOWCASE.png
+├── PHASE_DIAGRAMS_COMPARISON.png
+└── SUMMARY_STATS.png
+
+examples/                     # Utility scripts
+└── create_master_showcase.py
 ```
 
 ## Results
