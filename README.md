@@ -11,11 +11,21 @@ Educational visualizations of energy-based models running on GPU using THRML—t
 
 ## Visual Showcase
 
-### Master Showcase: All Models
-![Master Showcase](assets/MASTER_SHOWCASE.png)
+### XY Model: Topological Vortices
+![XY Model Vortices](assets/xy_model_beta_1.2.png)
+*Spin field showing topological vortex-antivortex pairs at β=1.2. Colors represent spin angles.*
 
-### Phase Diagrams Comparison
+### Ising Model: Domain Formation
+![Ising Phase Transition](assets/ising_phase_transition.png)
+*Binary spins showing ferromagnetic domain formation and symmetry breaking.*
+
+### Potts Model: Multi-state Competition
+![Potts Model](assets/potts_model.png)
+*Five-state spins competing for dominance at β=1.0.*
+
+### Phase Diagrams
 ![Phase Diagrams](assets/PHASE_DIAGRAMS_COMPARISON.png)
+*Temperature sweeps showing phase transitions across all three models.*
 
 **Videos:** All generated videos are in the `outputs/` directory (run scripts to generate locally). The main XY model video (`outputs/energy_based/xy_massive_256x256_60fps_20s.mp4`) is 252MB of 60fps high-quality visualization showing vortex dynamics in real-time.
 
@@ -35,9 +45,6 @@ Educational visualizations of energy-based models running on GPU using THRML—t
 - Beta: 1.2 (moderate temperature)
 - Frames: 1,200 @ 60fps (20 seconds)
 - Encoding: H.265 CRF 15 (high quality)
-
-![XY Model at Beta 1.2](assets/xy_model_beta_1.2.png)
-*XY model spin field showing vortex dynamics at β=1.2. Colors represent spin angles from 0 (red) to 2π (red again).*
 
 ### Ising Model
 **64×64 binary spins**
