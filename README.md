@@ -50,6 +50,17 @@ Educational visualizations of energy-based models running on GPU using THRML—t
 - Multi-color domain competition
 - Temperature sweep showing phase transition
 
+## Mandelbrot Visualizations (Not THRML)
+
+**Important:** These are traditional NumPy-based visualizations, NOT using THRML or energy-based computing.
+
+Located in `visualization_only/`, these are standard iterative calculations visualizing the Mandelbrot set through different lenses:
+
+- **Potential Theory Visualization** - Classic escape-time rendering with color mapping
+- **Iteration Evolution** - Shows how the fractal boundary emerges over iterations
+
+These are included for visual interest but are fundamentally different from the energy-based models above. The Mandelbrot set cannot be computed using THRML's thermodynamic sampling - it requires deterministic iteration, not probabilistic inference.
+
 ## Technical Details
 
 ### Implementation
@@ -98,7 +109,7 @@ This will:
 
 **Note:** This takes several minutes and requires significant RAM.
 
-### Other Models
+### Other THRML Models
 ```bash
 # Ising model
 python ising_phase_transition.py
@@ -109,6 +120,19 @@ python potts_model_thrml.py
 # XY with vortex detection
 python xy_model_vortices.py
 ```
+
+### Mandelbrot Visualizations (NumPy-based, not THRML)
+```bash
+cd visualization_only
+
+# Potential theory visualization
+python mandelbrot_potential_theory.py
+
+# Iteration evolution
+python mandelbrot_iteration_evolution.py
+```
+
+**Note:** These are standard iterative calculations, not energy-based models.
 
 ## Repository Structure
 
